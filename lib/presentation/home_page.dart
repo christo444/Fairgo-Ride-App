@@ -6,7 +6,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:http/http.dart' as http;
 
-// --- Custom Clipper for the background curve ---
+
 class CustomBackgroundClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
@@ -28,8 +28,7 @@ class CustomBackgroundClipper extends CustomClipper<Path> {
 }
 
 
-// --- Home Page ---
-// The main screen of the app after the user logs in.
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -203,7 +202,6 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color(0xFFF1F4FF),
       body: Stack(
         children: [
-          // Background with a curve
           ClipPath(
             clipper: CustomBackgroundClipper(),
             child: Container(
@@ -211,7 +209,6 @@ class _HomePageState extends State<HomePage> {
               height: 300,
             ),
           ),
-          // AppBar
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -237,7 +234,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          // Main content
           Center(
             child: Padding(
               padding: const EdgeInsets.all(24.0),
