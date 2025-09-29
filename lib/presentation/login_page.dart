@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// --- Custom Clipper for the background curve ---
+
 class CustomBackgroundClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
@@ -21,8 +21,7 @@ class CustomBackgroundClipper extends CustomClipper<Path> {
   bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
 
-// --- Login Page ---
-// This widget provides a UI for user authentication based on the new design.
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -140,8 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 16, color: Colors.grey),
                           ),
-                          const SizedBox(height: 32),
-                          // Username
+                          const SizedBox(height: 32), 
                           const Text('Username',
                               style: TextStyle(
                                   color: Colors.grey,
@@ -162,7 +160,6 @@ class _LoginPageState extends State<LoginPage> {
                             },
                           ),
                           const SizedBox(height: 20),
-                          // Phone Number
                           const Text('Phone Number',
                               style: TextStyle(
                                   color: Colors.grey,
@@ -187,7 +184,6 @@ class _LoginPageState extends State<LoginPage> {
                             },
                           ),
                           const SizedBox(height: 20),
-                          // Password
                           const Text('Password',
                               style: TextStyle(
                                   color: Colors.grey,
@@ -222,7 +218,6 @@ class _LoginPageState extends State<LoginPage> {
                             },
                           ),
                           const SizedBox(height: 20),
-                          // Remember me & Forgot Password
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [

@@ -2,12 +2,11 @@ import 'package:fairgo_ride_app/presentation/home_page.dart' show HomePage;
 import 'package:fairgo_ride_app/presentation/login_page.dart' show LoginPage;
 import 'package:flutter/material.dart';
 
-// The main entry point of the application.
 void main() {
   runApp(const RideBookingApp());
 }
 
-// The root widget of the application.
+
 class RideBookingApp extends StatelessWidget {
   const RideBookingApp({super.key});
 
@@ -16,7 +15,7 @@ class RideBookingApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ride Booking App',
       debugShowCheckedModeBanner: false,
-      // Define the app's theme for a consistent look and feel.
+      
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         brightness: Brightness.light,
@@ -33,9 +32,7 @@ class RideBookingApp extends StatelessWidget {
           hintStyle: TextStyle(color: Colors.grey[400]),
         ),
       ),
-      // Set the initial route to the LoginPage.
       initialRoute: '/',
-      // Define the named routes for navigation.
       routes: {
         '/': (context) => const LoginPage(),
         '/home': (context) => const HomePage(),
